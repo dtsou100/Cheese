@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kế Hoạch Cuối Tuần</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #FDFBF7;
+            color: #4A4A4A;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .container {
+            max-width: 600px;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            overflow: hidden;
+            width: 100%;
+        }
+        .header {
+            background-color: #E8D5C4;
+            padding: 30px 20px;
+            text-align: center;
+        }
+        .header h1 { margin: 0; color: #5D4037; font-size: 24px;}
+        .header p { margin: 10px 0 0 0; font-size: 15px; color: #795548; }
+        
+        .tabs {
+            display: flex;
+            background-color: #F5EBE1;
+        }
+        .tab-btn {
+            flex: 1;
+            padding: 15px;
+            border: none;
+            background: none;
+            font-size: 16px;
+            font-weight: bold;
+            color: #8D6E63;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .tab-btn:hover { background-color: #E8D5C4; }
+        .tab-btn.active {
+            background-color: white;
+            color: #5D4037;
+            border-bottom: 3px solid #8D6E63;
+        }
+
+        .content {
+            padding: 25px;
+            display: none;
+            animation: fadeIn 0.5s;
+        }
+        .content.active { display: block; }
+        .option-card {
+            border: 1px solid #EEE;
+            border-radius: 10px;
+            padding: 15px;
+            margin-bottom: 15px;
+        }
+        .option-card h3 { margin-top: 0; color: #5D4037; }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+	/* Code vẽ đường chấm chấm tự động co giãn */
+        .dotted-line {
+            border-bottom: 2px dotted #bcaaa4; /* Màu nâu nhạt cho hợp tone */
+            margin: 25px 0; /* Khoảng cách giữa các dòng */
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+        <h1>Menu Cheese Chill 🌿</h1>
+        <p><strong>*Note:</strong> Anh biết em lên đây sẽ giành cả thời gian cùng người quen, người thân trên này nữa, những nội dung bên dưới chỉ là đề xuất nếu khoảng thời gian đó em đi với anh thì mình có thể đi đâu, không phải là lên lịch chiếm trọn 2 ngày của em đâu. Và thực tế hôm đó nếu em có đề xuất thì sẽ theo em luôn :> </p>
+    </div>
+
+    <div class="tabs">
+        <button class="tab-btn active" onclick="openTab('thu7')">Thứ 7</button>
+        <button class="tab-btn" onclick="openTab('chunhat')">Chủ Nhật</button>
+    </div>
+
+    <!-- NỘI DUNG THỨ 7 -->
+    <div id="thu7" class="content active">
+        <h2>Chiều & Tối Thứ 7</h2>
+        
+        <div class="option-card">
+            <h3>15:00 - 17:30 ~ Khung giờ hơi sớm nhưng cứ có lựa chọn nếu em muốn đi </h3>
+            <p><strong>Option 1:</strong> Quán Bancông Cafe & Restaurant</p>
+            <img src="https://lh3.googleusercontent.com/gps-cs-s/APNQkAHHQ3OrvLfgMV50xEk0xby9LJ2H6svP9Y2n_rjse-3BW9gLwk6GpVffBfeq4Bq1lmNoK9OsZMMx7MHo-VS939ead6RtMb4u_SAe26o9X36NYxVMNRTeKNPvsVcgioZqLuKjP8PdD-yHh6PU=s1360-w1360-h1020-rw" style="width:100%; border-radius:8px;">
+            <p>Không biết em thử quán này chưa, anh thấy đề xuất nên cho vào, quán có cả đồ ăn và đồ uống, nếu đi muộn 1 chút thì có thể ăn và uống ở đây luôn </p>
+            <p><strong>Option 2: </strong> Quán Quận X98</p>
+            <img src="https://lh3.googleusercontent.com/gps-cs-s/APNQkAGHk_FTowImbJGwhEhOYhZxttzR9nngLjJXzSUEI_lsW76sdM6ghL6sRnI0mNKPWokzEDvnH3Nlrm5xNlfsBLo1C3Bm14mDKL68mStqutIiEvP7R9XtvII9pnahAtWBkGVoAlqfCS6kB7pP=s1360-w1360-h1020-rw" style="width:100%; border-radius:8px;">
+            <p>Quán này chọn vì món trà sữa/cà phê trên ốc quế này: <img src="https://lh3.googleusercontent.com/gps-cs-s/APNQkAF_3QKobn_uEPUuwAv-xD9ae0Q6DRiVWeDsQ7IJM7qlKi-HF3Ij9OfADT5ls76cTYzipYybgpm5BBZXOK2-JGTL-KP-hJcKMKS6NDsR6fwOXMQjoyRn6Kc4c-mqcvEMH0acYQ8-F00OxPN4=w243-h304-n-k-no-nu" style="width:15%; border-radius:8px;"></p>
+            <p>không biết em đã thử chưa</p> 
+        </div>
+
+        <div class="option-card">
+            <h3>18:00 - 20:00 ~ Ăn tối </h3>
+            <p><strong>Option 1: </strong> Quán Nét Huế</p>
+            <img src="https://scontent.fhan2-4.fna.fbcdn.net/v/t39.30808-6/485370176_968560508762158_1514005947588404610_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeFQuqqHQioI3mwxq-ptq3feeYxRv48hYg55jFG_jyFiDrJLtzautwU6na-rct9pUANzsnQtLbRowH-Svppyeybg&_nc_ohc=OmO0dlBezJwQ7kNvwFCK7I-&_nc_oc=AdosRycpLj0iA6DvsxkrJSttbxMWv20M6F64C0q70sQi0ik5L4KXRV17ig0VLk-hVsM&_nc_zt=23&_nc_ht=scontent.fhan2-4.fna&_nc_gid=VYD0H197N5I0JFW8vonGqw&_nc_ss=7b2a8&oh=00_Af5_PxfeVF-YKltKXbYAMIauDdjN22WfI3DZdXfDfBtTtQ&oe=6A1B1076" style="width:100%; border-radius:8px;">
+            <p>Anh thấy quán này có khá nhiều lựa chọn nên đề xuất thui</p>
+            <p><strong>Option 2: </strong> Quán Phở cuốn - Phở Cuốn 31</p>
+            <img src="https://lh3.googleusercontent.com/p/AF1QipNWRm88XUS05aeXUDY7t5TglyiF36b9CgjpD7oY=s1360-w1360-h1020-rw" style="width:100%; border-radius:8px;">
+            <p> Phở cuốn cũng dễ tiêu, có thể là ở quán này hoặc quán khác, hoặc là bánh tráng nha</p>
+        </div>
+
+        <div class="option-card">
+            <h3>Sau 20:00 ~ Ăn tối xong </h3>
+            <p><strong> Chưa có đề xuất cụ thể </strong> </p>
+            <p>Tùy vào việc chúng ta ăn xong em có muốn đi đâu đó không với thời tiết lúc đó, có thể đi xem phim, hôm đó anh thấy có phim wukong ngoài rạp :> hehe </p>
+        </div>
+
+    </div>
+
+    <!-- NỘI DUNG CHỦ NHẬT -->
+    <div id="chunhat" class="content">
+        <h2>Chủ Nhật (Trùng hợp là 15/4 âm lịch ~ lễ Phật Đản)</h2>
+        <p>Nên anh đưa thêm lựa chọn ăn chay vào menu nhé, hehe</p>
+        <p><strong>*Note:</strong> Ngày chủ nhật anh chỉ đề xuất tới chiều vì khả năng tối em phải nghỉ ngơi hoặc về để hôm sau đi làm nữa. Tuy nhiên nếu là tối chủ nhật mới được gặp em thì linh động vậy, em chọn 1 cái rồi mình đi</p>
+        
+        <div class="option-card">
+            <h3>7:30 - 9:30 ~ Ăn sáng </h3>
+            <p>Nếu em tôi dậy được giờ này thì sẽ pick em đi ăn sáng nhé</p>
+            <p><strong>Ăn sáng: </strong> Quán Cāga Café & Restaurant</p>
+            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/31/76/a8/2b/caption.jpg?w=1200&h=1200&s=1" style="width:100%; border-radius:8px;">
+            <p>Quán này chúng ta có ăn sáng, cafe gồm cả đồ chay và mặn luôn</p>
+        </div>
+        
+        <div class="option-card">
+            <h3>9:30 - 11:30 ~ Chơi phố </h3>
+            <p>Ăn sáng trên phố xong chúng ta sẽ kiếm gì chơi ở đó luôn nhé, trời nóng chưa có đề xuất cụ thể nhưng không để em lượn phố cháy nắng đâu ^^ </p>
+            <div class="dotted-line"></div>
+            <div class="dotted-line"></div>
+            <div class="dotted-line"></div> 
+            <p>(Để chấm chấm in ra rồi điền :v)</p>           
+        </div>
+        
+        <div class="option-card">
+            <h3>11:30 - 13:00 ~ Ăn trưa </h3>
+            <p><strong>Món chay: </strong> Quán Cơm chay Hà Thành</p>
+            <img src="https://lh3.googleusercontent.com/gps-cs-s/APNQkAFKp2FNTs1XNaJdYFId1ofgQsO3FZL_-q2ldzyb4GmElPDebwmGg9K9_ycJPZ1-f0p74LbTUxxQftIBi6qIuVzv0KdOm_ANqLfzDFqjtYSzV6jFaUJRYcFIKW_SchuNJE0g6LhOEg=s1360-w1360-h1020-rw" style="width:100%; border-radius:8px;">
+            <p><strong>Món Nhật: </strong> Quán Tokyo Tan Tan</p>
+            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/26/db/40/7e/caption.jpg?w=1000&h=1000&s=1" style="width:100%; border-radius:8px;">
+            <p><strong>Anh có đề xuất 1 trong 2 quán này nha</strong></p>
+        </div>
+        
+        <div class="option-card">
+            <h3>Ăn xong ~ 14:00 </h3>
+            <p>Tầm đó khá nắng và nóng, nếu đi chơi tiếp anh đề xuất kiếm 1 quán cafe nào đó cho mát hoặc mấy chỗ có trò chơi vui vui</p>
+        </div>
+    </div>
+
+</div>
+
+<script>
+    function openTab(tabName) {
+        var i;
+        var contents = document.getElementsByClassName("content");
+        var buttons = document.getElementsByClassName("tab-btn");
+        
+        for (i = 0; i < contents.length; i++) {
+            contents[i].classList.remove("active");
+        }
+        for (i = 0; i < buttons.length; i++) {
+            buttons[i].classList.remove("active");
+        }
+        
+        document.getElementById(tabName).classList.add("active");
+        event.currentTarget.classList.add("active");
+    }
+</script>
+
+</body>
+</html>
